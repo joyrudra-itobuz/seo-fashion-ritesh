@@ -19,6 +19,8 @@ font-family: "Work Sans", sans-serif; */
 html body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #171614;
+  background-size: cover;
+  background-image: url("../images/bg.svg");
   font-weight: 500;
   padding: 0;
   margin: 0;
@@ -40,7 +42,7 @@ body h2 {
 /* Header Here  */
 header {
   color: var(--color-primary);
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
 }
 nav {
   padding: var(--sm-device-padding);
@@ -62,15 +64,15 @@ body header .brand-name {
 /* hero  */
 
 .hero {
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
 
-  background: rgb(255, 132, 0);
+  /* background: rgb(255, 132, 0);
   background: radial-gradient(
     circle,
     rgb(255, 123, 0) 0%,
     rgba(0, 0, 0, 1) 50%,
     rgba(0, 0, 0, 1) 70%
-  );
+  ); */
   /* background-image: url("../images/header/bg-texture.png"); */
   /* backface-visibility: hidden; */
   background-blend-mode: overlay;
@@ -141,7 +143,7 @@ body header .brand-name {
 }
 
 /* swati's css code here */
-.wear-amazon{
+.wear-amazon {
   display: none;
 }
 .wear-amazon-small-screen {
@@ -150,13 +152,13 @@ body header .brand-name {
   flex-direction: column;
   align-items: center;
 }
-.wear-amazon-text{
+.wear-amazon-text {
   text-decoration: none;
-  color: #F0EDE6;
+  color: #f0ede6;
   padding-top: 50%;
 }
 
-.wear-amazon-gap{
+.wear-amazon-gap {
   padding-top: 30%;
   padding-right: 30%;
 }
@@ -164,14 +166,14 @@ body header .brand-name {
   color: #ba4242;
   padding-right: 10%;
 }
-.new-arrival-small-screen{
+.new-arrival-small-screen {
   padding: 20%;
-  color: #F0EDE6;
+  color: #f0ede6;
 }
-.island-capsule{
+.island-capsule {
   display: none;
 }
-.island-capsule-small-screen{
+.island-capsule-small-screen {
   display: flex;
   flex-direction: column;
   /* background-color: black; */
@@ -247,71 +249,71 @@ body header .brand-name {
     position: absolute;
     right: 36%;
   }
-  .shop-now{
+  .shop-now {
     padding-top: 20%;
     padding-left: 40%;
-}
-#shop-now-button {
-    color: #DF4949;
+  }
+  #shop-now-button {
+    color: #df4949;
     padding-right: 10%;
-}
-/* swati's code here */
-.wear-amazon {
+  }
+  /* swati's code here */
+  .wear-amazon {
     /* background-color: black; */
     display: flex;
-}
-.wear-amazon-text {
+  }
+  .wear-amazon-text {
     font-size: 65px;
     font-weight: 500;
     padding-right: 100px;
-}
-.starImage {
+  }
+  .starImage {
     padding-left: 700%;
-}
-.new-arrival-text {
+  }
+  .new-arrival-text {
     font-size: 25px;
     font-weight: 400;
     padding-bottom: 261px;
-}
-.wear-amazon-small-screen{
+  }
+  .wear-amazon-small-screen {
     display: none;
-}
-.island-capsule{
+  }
+  .island-capsule {
     /* background-color: black; */
     display: flex;
-}
-.island-capsule-text {
+  }
+  .island-capsule-text {
     font-size: 65px;
     font-weight: 700;
-    color: #F0EDE6;
-}
-.cooler-text{
+    color: #f0ede6;
+  }
+  .cooler-text {
     padding-top: 10%;
     padding-bottom: 70%;
     font-size: 25px;
     font-weight: 700;
-    color: #F0EDE6;
-}
-.white-crop-top{
+    color: #f0ede6;
+  }
+  .white-crop-top {
     padding-top: 90%;
-}
-.island-capsule{
+  }
+  .island-capsule {
     display: flex;
-}
-.island-capsule-small-screen {
+  }
+  .island-capsule-small-screen {
     display: none;
-}
-.figure {
+  }
+  .figure {
     -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   .figure:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
-  .star{
+  .star {
     margin-left: -5%;
     margin-top: -29%;
   }
@@ -319,10 +321,10 @@ body header .brand-name {
     overflow: hidden;
     position: relative;
   }
-  
+
   a::before,
   a::after {
-   content: '';
+    content: "";
     position: absolute;
     width: 100%;
     left: 0;
@@ -333,17 +335,17 @@ body header .brand-name {
     bottom: -15px;
     transform-origin: 100% 50%;
     transform: scaleX(0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
   }
   a::after {
     content: attr(data-replace);
     top: 0;
     transform-origin: 100% 50%;
     transform: translate3d(200%, 0, 0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
     color: #54b3d6;
   }
-  
+
   a:hover::before {
     transform-origin: 0% 50%;
     transform: scaleX(1);
@@ -351,24 +353,22 @@ body header .brand-name {
   a:hover::after {
     transform: translate3d(0, 0, 0);
   }
-  
+
   a span {
     display: inline-block;
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
   }
-  
+
   a:hover span {
     transform: translate3d(-50%, 0, 0);
   }
-  
+
   a {
     text-decoration: none;
     color: #ba4242;
     font-weight: 700;
   }
   /* swati's code ends here */
-
-
 }
 
 @media (min-width: 1400px) {
@@ -451,29 +451,27 @@ body header .brand-name {
 }
 /* Joy ending */
 
-
 :root {
-  --mobile-margin :0rem 0.938rem 0rem 0.938rem;
-  --bestseller-font-color1 : #F0EDE6;
-  --bestseller-font-color2 : #888785;
-  --bestseller-font-color3 : #DF4949;
-  --mobile-card-title-size1 : 1.2rem;
-  --mobile-card-title-size2 : .7rem;
-  --mobile-card-title-size3 : 1.1rem;
-  --font-weight1 : 400;
-  --font-weight2 : 500;
+  --mobile-margin: 0rem 0.938rem 0rem 0.938rem;
+  --bestseller-font-color1: #f0ede6;
+  --bestseller-font-color2: #888785;
+  --bestseller-font-color3: #df4949;
+  --mobile-card-title-size1: 1.2rem;
+  --mobile-card-title-size2: 0.7rem;
+  --mobile-card-title-size3: 1.1rem;
+  --font-weight1: 400;
+  --font-weight2: 500;
 }
 
 .bestseller {
-  background-image: url(../images/bestsellers/Ellipse1.svg);
-  background-size: contain;
-  /* background-image: url(../images/bestsellers/Gradient1.png); */
+  /* background-image: url("../images/bg.svg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: contain; */
+
   flex-direction: column;
 }
-/* .bestseller>img {
-  mix-blend-mode: overlay;
-  opacity: 0.3
-} */
+
 .bestseller-heading {
   font-weight: var(--font-weight2);
   font-size: 2rem;
@@ -483,8 +481,8 @@ body header .brand-name {
 }
 .bestseller-heading img {
   position: absolute;
-  left: 90%;
-  top: -1%;
+  left: 85%;
+  top: -0.1%;
 }
 .swiper-wrapper {
   margin-top: 2rem;
@@ -493,9 +491,8 @@ body header .brand-name {
   margin-top: 2rem;
   max-width: 85%;
   /* align-items: center; */
-  
 }
-.bestseller-card1 img{
+.bestseller-card1 img {
   max-width: 70%;
   z-index: 1;
   /* align-items: center; */
@@ -521,7 +518,7 @@ body header .brand-name {
   justify-content: space-between;
 }
 .bestseller-card1-price .price {
-  color : var(--bestseller-font-color3);
+  color: var(--bestseller-font-color3);
   font-weight: var(--font-weight2);
   font-size: var(--mobile-card-title-size3);
   /* display: inline-block; */
@@ -530,7 +527,7 @@ body header .brand-name {
   font-size: var(--mobile-card-title-size3);
   /* display: inline-block; */
 }
-.card2-title{
+.card2-title {
   position: absolute;
   max-width: 70%;
   background: #171614;
@@ -545,7 +542,8 @@ body header .brand-name {
 /* .bestseller-button-left span, .bestseller-button-right span {
   max-width: 10%;
 } */
-.bestseller-button-left a, .bestseller-button-right a{
+.bestseller-button-left a,
+.bestseller-button-right a {
   padding: 0.9rem 1.2rem 0.9rem 1.2rem;
   border: 1px solid var(--bestseller-font-color3);
   border-radius: 50%;
@@ -553,7 +551,7 @@ body header .brand-name {
   text-decoration: none;
 }
 
-.aesthetic {  
+.aesthetic {
   /* background-image: url(../images/aesthetic-lothes/Gradient.png); */
   background-image: url(../images/aesthetic-lothes/Ellipse2.svg);
   background-size: cover;
@@ -578,7 +576,7 @@ body header .brand-name {
   color: var(--bestseller-font-color3);
 }
 .aesthetic-content-text2 a {
-  padding:.22rem .5rem .22rem .5rem;
+  padding: 0.22rem 0.5rem 0.22rem 0.5rem;
   border: 1px solid var(--bestseller-font-color2);
   color: var(--bestseller-font-color1);
 }
@@ -593,7 +591,7 @@ body header .brand-name {
 }
 
 .circle:hover {
-  border:1px solid #888785;
+  border: 1px solid #888785;
   border-radius: 100%;
 }
 
@@ -606,8 +604,13 @@ body header .brand-name {
   overflow-x: scroll;
 }
 
-#follow img { 
+#follow img {
   padding: 2rem 1rem;
+}
+
+.by-women-star {
+  margin-top: -21vh;
+  margin-left: -17vw;
 }
 /* Ritu ends */
 
