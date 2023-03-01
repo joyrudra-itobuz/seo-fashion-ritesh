@@ -1,0 +1,49 @@
+/* @import "desktop.css"; */
+:root {
+    --desktop-margin :0rem 3rem 0rem 3rem;
+    --desktop-card-title-size0 : 4rem;
+    --desktop-card-title-size1 : 1.5rem;
+    --desktop-card-title-size2 : 1rem;
+    --desktop-card-title-size3 : 1.2rem;
+}
+
+@media(min-width:768px){
+    .bestseller {
+        margin-bottom: 7rem;
+    }
+    .bestseller-heading {
+        font-size: var(--desktop-card-title-size0);
+        margin: var(--desktop-margin);
+    }
+    .bestseller-card1-title {
+        font-size: var(--desktop-card-title-size1);
+    }
+    .bestseller-card1-details {
+        font-size: var(--desktop-card-title-size2);
+    }
+    .bestseller-card1-price .price {
+        font-size: var(--desktop-card-title-size3);
+    }
+    .bestseller-card1-price .date {
+        font-size: var(--desktop-card-title-size3);
+    }
+    .bestseller-button {
+        margin-top: 6rem;
+        justify-content: end;
+        margin-right: 4rem;
+    }
+    .aesthetic {
+        align-items: center;
+    }
+    .aesthetic-image {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 80%;
+    }
+    .aesthetic-image img {
+        max-width: 50%;
+    }
+    .aesthetic-content {
+        max-width: 40%;
+    }
+}

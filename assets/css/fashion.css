@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Plus Jakarta Sans";
+  background-color: black;
+
+ /* background-image: url('/./assets/images/bg.png'); */
+}
+
+.ritesh .swiper {
+  width: 100%;
+  height: auto;
+}
+.ritesh .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ritesh .swiper {
+  width: 100%;
+}
+
+.ritesh .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ritesh .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  object-fit: fill;
+  margin-top: -2.3rem;
+}
+
+.swiper-wrapper {
+  margin-top: 0;
+}
+
+.email{
+  border:1px solid #fff;
+}
+
+.subscribe , .email{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #C8C6C3;
+    min-width: max-content;
+}
+
+  
+.subscribe:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.footer-content {
+  /* padding: 2rem; */
+  border-bottom: 1px solid gray;
+}
+
+.footer-first {
+  border-top: 1.3px solid #4b9eaf;
+}
+
+.footer-mid {
+  border-top: 1.3px solid yellow;
+}
+
+.footer-instagram-post {
+  border-top: 1.3px solid red;
+}
+
+.copyright-border {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 575px )  {
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .footer-first ,.footer-instagram-post ,.footer-mid{
+    width: 100%;
+    /* align-items: center; */
+    text-align: center;
+  }
+
+  .footer-instagram-image{
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 1200px )  {
+  .footer{
+
+  }
+  .footer-content{
+    display:flex;
+    flex-direction: row;
+
+  }
+
+  .footer-first ,.footer-instagram-post {
+    width: 100%;
+ 
+    text-align: center;
+  }
+  
+
+  .footer-instagram-image{
+    justify-content: center;
+  }
+
+
+}
